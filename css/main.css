@@ -1,0 +1,71 @@
+body {
+	background-color:black;
+}
+
+.fightScreen {
+	background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  /*Ultimately, this div is going to need to 
+  accommodate our Ryu images (which are all 659px wide)
+  and our Hadouken, which will start out near the right
+  of this image and travel to the right of the screen.
+  Setting the min-width to 1200px should accommodate these
+  requirements (even if it makes the experience suboptimal
+  for mobile users). If the user’s browser window is narrower
+than 1200px, they’ll have to scroll.*/
+  min-width: 1200px;
+  /*Even if there isn't any
+  content inside it will still 
+  be displayed*/
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.ryu {
+	width: 659px;
+	height:494px;
+}
+
+.RyuReady, .RyuStill, .RyuHadouken {
+ 	width: 659px;
+  	height: 494px;
+}
+
+.RyuReady, .RyuHadouken {
+	 display: none;
+}
+
+.RyuReady {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.RyuStill {
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.RyuHadouken {
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: left;
+  position: absolute;
+  left: 540px;
+  top: 166px;
+  z-index: 10;
+}
+
+.hadouken, .RyuReady, .Ryustill, .RyuHadouken {
+  background-repeat: no-repeat;
+}
+
+/*
+<img src="images/ryu-cool.gif">
+*/
+
