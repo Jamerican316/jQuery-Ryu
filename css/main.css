@@ -22,7 +22,8 @@ than 1200px, they’ll have to scroll.*/
   position: relative;
   z-index: 1;
 }
-
+/*set width and heigth to same demensions
+as the images*/
 .ryu {
 	width: 659px;
 	height:494px;
@@ -33,10 +34,16 @@ than 1200px, they’ll have to scroll.*/
   	height: 494px;
 }
 
+/*set to display none but will be display
+on mouse event*/
+
 .RyuReady, .RyuHadouken {
 	 display: none;
 }
-
+/*set the ryu images to background image because
+they are not cosidered content- they fit inside divs
+which are styled - more control in manipulation of images as 
+far as positioning*/
 .RyuReady {
 	background-image: url('../images/ryu-ready-position.gif');
 }
