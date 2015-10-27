@@ -1,27 +1,41 @@
 $(document).ready(function() {
 	
-  $('.ryu').mouseenter(function() {
-  	/* used alert to test code for functionality
-  	alert('mouse entered .ryu div');*/
-  	$('.RyuStill').hide();
-  	$('.RyuReady').show();
-	})
-  .mouseleave(function() {
-    $('.RyuReady').hide();
-	$('.RyuStill').show();
-	 })
-	.mousedown(function() {
-	/*used console-log to test the function- logged to console
-	becasue alert would interfer with mouse down	
-    console.log('mousedown');*/
-    // play hadouken sound
-  	$('.RyuReady').hide();
-  	$('.RyuHadouken').show();
-  	$('.hadouken').show();
-	 })
-  // animate hadouken to the right of the screen
-  .mouseup(function() {
-    $('RyuHadouken').hide();
-  	$('.RyuReady').show();
-  });
+	  	$('.ryu').mouseenter(function() {
+	  	/* used alert to test code for functionality
+	  	alert('mouse entered .ryu div');*/
+	  	$('.RyuStill').hide();
+	  	$('.RyuReady').show();
+		})
+	  	.mouseleave(function() {
+	    $('.RyuReady').hide();
+		$('.RyuStill').show();
+		 })
+		.mousedown(function() {
+		/*used console-log to test the function- logged to console
+		becasue alert would interfer with mouse down	
+	    console.log('mousedown');*/
+	    // play hadouken sound
+	    playHadouken();
+	  	$('.RyuReady').hide();
+	  	$('.RyuHadouken').finish().show();
+	  	$('.hadouken').finish().show().animate(
+	  	{'left': '1020px'},
+	  	 500,
+	  	 function() {
+	    $(this).hide();
+	    $(this).css('left', '520px');
+	  	 })
+	  // animate hadouken to the right of the screen
+	  	.mouseup(function() {
+	  	console.log('mouseup');
+	  	//$('.RyuReady').show();
+	  	//$('.RyuHadouken').finish().hide();
+	  	 })
+	});
 });
+
+function playHadouken () {
+  $('#hadouken-sound')[0].volume = 0.5;
+  $('#hadouken-sound')[0].load();
+  $('#hadouken-sound')[0].play();
+}
