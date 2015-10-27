@@ -9,12 +9,19 @@ $(document).ready(function() {
   .mouseleave(function() {
     $('.RyuReady').hide();
 	$('.RyuStill').show();
+	 })
+	.mousedown(function() {
+	/*used console-log to test the function- logged to console
+	becasue alert would interfer with mouse down	
+    console.log('mousedown');*/
+    // play hadouken sound
+  	$('.RyuReady').hide();
+  	$('.RyuHadouken').show();
+  	$('.hadouken').show();
+	 })
+  // animate hadouken to the right of the screen
+  .mouseup(function() {
+    $('RyuHadouken').hide();
+  	$('.RyuReady').show();
   });
 });
-$(".RyuStill").hover( handler ).show
-  	$(".RyuStill").hide(".RyuReady");
-
-
-  $(".RyuHadouken").hide();
-  $(".RyuCool").hide();
-  $(".hadouken").hide();
