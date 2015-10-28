@@ -27,6 +27,7 @@ as the images*/
 .ryu {
 	width: 659px;
 	height:494px;
+	float: left;
 }
 
 .RyuReady, .RyuStill, .RyuHadouken {
@@ -56,6 +57,10 @@ far as positioning*/
 	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
+.RyuCool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
 .hadouken {
   background-image: url('../images/hadouken.gif');
   width: 156px; 
@@ -72,7 +77,21 @@ far as positioning*/
   background-repeat: no-repeat;
 }
 
-/*
-<img src="images/ryu-cool.gif">
-*/
+.instructions {
+	position: absolute;
+	left: 60%;
+	width: 600px;
+	height: 300px;
+	margin-right: 100px;
+}
+
+.instructions > p {
+	width: 300px;	
+}
+
+.instructions p + p {
+    margin-left: 200px;
+    width: 250px;
+    padding-top: 20px;
+}
 
