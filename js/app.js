@@ -1,16 +1,16 @@
 $(document).ready(function() {
 	
-	  	$('.ryu').mouseenter(function() {
+  	$('.ryu').mouseenter(function() {
 	  	/* used alert to test code for functionality
 	  	alert('mouse entered .ryu div');*/
 	  	$('.RyuStill').hide();
 	  	$('.RyuReady').show();
-		})
-	  	.mouseleave(function() {
+	})
+  	.mouseleave(function() {
 	    $('.RyuReady').hide();
 		$('.RyuStill').show();
-		 })
-		.mousedown(function() {
+	})
+	.mousedown(function() {
 		/*used console-log to test the function- logged to console
 		becasue alert would interfer with mouse down	
 	    console.log('mousedown');*/
@@ -24,14 +24,13 @@ $(document).ready(function() {
 	  	 function() {
 	    $(this).hide();
 	    $(this).css('left', '520px');
-	  	 })
+  		});
+  	})
 	  // animate hadouken to the right of the screen
-	  	.mouseup(function() {
-	  	console.log('mouseup');
-	  	//$('.RyuReady').show();
-	  	//$('.RyuHadouken').finish().hide();
-	  	 })
-	});
+	 .mouseup(function() {
+	  	$('.RyuReady').show();
+	  	$('.RyuHadouken').finish().hide();
+	 });
 });
 
 function playHadouken () {
