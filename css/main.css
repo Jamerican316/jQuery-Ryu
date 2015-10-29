@@ -30,7 +30,7 @@ as the images*/
 	float: left;
 }
 
-.RyuReady, .RyuStill, .RyuHadouken {
+.RyuReady, .RyuStill, .RyuHadouken, .RyuCool {
  	width: 659px;
   	height: 494px;
 }
@@ -38,7 +38,7 @@ as the images*/
 /*set to display none but will be display
 on mouse event*/
 
-.RyuReady, .RyuHadouken {
+.RyuReady, .RyuHadouken, .RyuCool {
 	 display: none;
 }
 /*set the ryu images to background image because
@@ -73,7 +73,7 @@ far as positioning*/
   z-index: 10;
 }
 
-.hadouken, .RyuReady, .Ryustill, .RyuHadouken {
+.hadouken, .RyuReady, .Ryustill, .RyuHadouken, .RyuCool {
   background-repeat: no-repeat;
 }
 
@@ -83,6 +83,7 @@ far as positioning*/
 	width: 600px;
 	height: 300px;
 	margin-right: 100px;
+	font-family:;
 }
 
 .instructions > p {

@@ -30,8 +30,14 @@ $(document).ready(function() {
 	 .mouseup(function() {
 	  	$('.RyuReady').show();
 	  	$('.RyuHadouken').finish().hide();
+	 })
+	 	$( "body" ).keydown(function(key) {
+  		if (key.which == 88){
+  			$("p").show();
+	 		}
 	 });
 });
+
 
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
