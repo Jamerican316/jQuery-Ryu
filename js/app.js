@@ -33,7 +33,7 @@ $(document).ready(function() {
 	 })
 	 	$( "body" ).keydown(function(key) {
   		if (key.which == 88){
-  			$("p").show();
+  			$("p").hide();
 	 		}
 	 });
 });
