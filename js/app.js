@@ -31,11 +31,18 @@ $(document).ready(function() {
 	  	$('.RyuReady').show();
 	  	$('.RyuHadouken').finish().hide();
 	 })
-	 	$( "body" ).keydown(function(key) {
-  		if (key.which == 88){
-  			$("p").hide();
-	 		}
-	 });
+    	$( "body" ).keydown(function(key) {
+  			if (key.which == 88);
+  			$(".RyuCool").show();
+  			$(".RyuHadouken").hide();
+  			$(".RyuReady").hide();
+  			$(".RyuStill").hide();
+    })
+	 	$( "body" ).keyup(function(key) {
+  			if (key.which == 88);
+  			$(".RyuStill").show();
+  			$(".RyuCool").hide();
+    });
 });
 
 
